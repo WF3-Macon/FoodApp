@@ -29,6 +29,6 @@ body {
 /**
  * Text color
  */
-.text-green {
+.green {
     color: var(--green);
 }
