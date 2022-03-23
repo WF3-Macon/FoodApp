@@ -21,13 +21,15 @@
             </a>
 
             <!-- Menu burger (mobile) -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
+            <div class="menu-burger">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </div>
 
             <!-- Menu de navigation (desktop) -->
             <!-- ul>li*5>a[href="#" title=""] -->
-            <ul>
+            <ul class="menu-desktop">
                 <li><a href="#" title="Home">Home</a></li>
                 <li><a href="#" title="Order">Order</a></li>
                 <li><a href="#" title="Company">Company</a></li>
@@ -37,42 +39,44 @@
         </nav>
 
         <!-- Header -->
-        <header>
+        <header class="container">
             <div>
                 <h1>Beautiful food & takeaway, <span class="green">delivered</span> to your door.</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus ea esse non veniam sequi ducimus enim repudiandae, eum dolor at distinctio maiores, culpa qui voluptatem provident soluta nobis. Sapiente.</p>
-                <a href="#" title="Place and Order">Place and Order</a>
+                <a href="#" title="Place and Order" class="btn-green">Place and Order</a>
             </div>
-            <img src="images/hero_image.png" alt="Hero Image">
+            <img src="images/hero_image.png" alt="Hero Image" class="picture">
         </header>
 
         <!-- Partie principale -->
         <main>
 
             <section>
-                <div>
-                    <h2>The home of fresh products</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda id aut illum. Corporis eum illum, exercitationem iure distinctio quod. Rerum illo commodi ea qui magni quaerat, et voluptatum quibusdam. Odio.</p>
-                    <a href="#" title="Learn about us">Learn about us</a>
+                <div class="container">
+                    <div>
+                        <h2>The home of fresh products</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda id aut illum. Corporis eum illum, exercitationem iure distinctio quod. Rerum illo commodi ea qui magni quaerat, et voluptatum quibusdam. Odio.</p>
+                        <a href="#" title="Learn about us" class="btn-green">Learn about us</a>
+                    </div>
+                    <img src="images/eat.png" alt="Eat" class="picture">
                 </div>
-                <img src="images/eat.png" alt="Eat">
             </section>
 
-            <section>
+            <section class="container">
                 <h2>How it works.</h2>
                 <section>
                     <div>
-                        <img src="images/step_01.png" alt="Step 01">
+                        <img src="images/step_01.png" alt="Step 01" class="picture">
                         <h3>Adapt your menu items</h3>
                         <p>Easily adapt your menu using the webflow CMS and allow customers to browse your items.</p>
                     </div>
                     <div>
-                        <img src="images/step_02.png" alt="Step 02">
+                        <img src="images/step_02.png" alt="Step 02" class="picture">
                         <h3>Accept online orders & takeout</h3>
                         <p>Let your customers order and pay via the powerful ecommerce system, or simple let them call your store.</p>
                     </div>
                     <div>
-                        <img src="images/step_03.png" alt="Step 03">
+                        <img src="images/step_03.png" alt="Step 03" class="picture">
                         <h3>Manage delivery or takeout</h3>
                         <p>Manage your own logistics and take orders simply through the ecommerce system.</p>
                     </div>
@@ -82,11 +86,13 @@
         </main>
 
         <footer>
-            <p>Powered by FoodApp</p>
-            <ul>
-                <li><a href="#" title="CGV">CGV</a></li>
-                <li><a href="#" title="About us">About us</a></li>
-            </ul>
+            <div class="container">
+                <p>Powered by FoodApp</p>
+                <ul>
+                    <li><a href="#" title="CGV">CGV</a></li>
+                    <li><a href="#" title="About us">About us</a></li>
+                </ul>
+            </div>
         </footer>
 
     </body>

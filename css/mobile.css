@@ -32,3 +32,128 @@ body {
 .green {
     color: var(--green);
 }
+
+/**
+ * Alert
+ */
+.alert, .menu-desktop {
+    display: none;
+}
+
+/**
+ * Navigation 
+ */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav img {
+    width: 15%;
+}
+
+/**
+ * Menu burger
+ */
+.menu-burger {
+    background-color: var(--green-light);
+    border-radius: 8px;
+    padding: 10px 10px 5px 10px;
+}
+
+.menu-burger svg {
+    width: 32px;
+}
+
+/**
+ * Header
+ */
+header,
+main section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p,
+main section p {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    font-weight: 300;
+    margin: 50px 0;
+    color: var(--blue-dark);
+}
+
+.picture {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.btn-green {
+    text-decoration: none;
+    color: var(--white);
+    padding: 14px 24px;
+    border-radius: 6px;
+    background: var(--green) url('../images/button_wave.svg') no-repeat;
+}
+
+main section h2 {
+    font-size: 2.8rem;
+    color: var(--green);
+}
+
+/**
+ * :first-child permet de cibler un élément positionné en 
+ * premier enfant de son parent
+ */
+main section:first-child {
+    background-color: var(--green-light);
+}
+
+/**
+ * :last-child permet de cibler un élément positionné en 
+ * dernier enfant de son parent
+ */
+main section:last-child p {
+    margin: 0;
+}
+
+main section:last-child h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    /* margin: 20px 0 10px 0 */
+}
+
+/**
+ * Footer
+ */
+footer {
+    background-color: var(--green-light);
+    padding: 20px 0;
+}
+
+footer p {
+    color: var(--green-dark);
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer ul a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--blue-dark);
+}
